@@ -19,8 +19,9 @@ function generateRandomString(length) {
   }
   return result;
 }
-
-function generateRandomIntArray(min, max, length) {
+// test zapisu function ES5 a strzałkowa ES6 w node moduły test: OK
+// function generateRandomIntArray(min, max, length) {
+const generateRandomIntArray = (min, max, length) => {
   const randomArray = [];
   for (let i = 0; i < length; i++) {
     randomArray.push(getRandomInt(min, max));
